@@ -57,15 +57,15 @@ use App\DB\Sql;
                     foreach ($con as $res) {
                         if (Security::validatePassword(self::getPassword() , $res['password'])) {
                             $payload = ['IDToken' => $res['IDToken']];
-                            $token = Security::createTokenJwt(Security::secretKey(),$payload);
+                            $token   = Security::createTokenJwt(Security::secretKey(),$payload);
 
                             $data = [
                                 'name'   => $res['nombre'],
                                 'rol'    => $res['rol'],
-                                'token'  => $token['token']
+                                'token'  => $token
                             ];
                             return ResponseHttp::status200($data);
-                            exit;
+                            //exit;
                         } else {
                             return ResponseHttp::status400('El usuario o contraseña son incorrectos');
                         }
@@ -74,6 +74,20 @@ use App\DB\Sql;
             } catch (\PDOException $e) {
                 error_log("UserModel::Login ->"  .$e);
                 die(json_encode(ResponseHttp::status500()));
+            }
+        }
+
+        final public static function getAll()
+        {
+            try {
+                $con = self::getConnection();
+                $query = $con->prepare("SELECT * FROM usuario");
+                $query->execute();
+                $rs['data'] = $query->fetchAll(\PDO::FETCH_ASSOC);
+                return $rs;
+            } catch (\PDOException $e) {
+                error_log("UserModel::getAll -> ".$e);
+                die(json_encode(ResponseHttp::status500('No se puede obtener los datos')));
             }
         }
 
