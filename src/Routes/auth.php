@@ -11,6 +11,6 @@ $headers = getallheaders();
 
 $app = new UserController($method,$route,$params,$data,$headers);
 
-$app->getLogin("auth/{$params[1]}/{$params[2]}");
+$app->getLogin("auth/{$params[1]}/{$params[2]}/");
 
-echo json_encode(ResponseHttp::status400());
+echo json_encode(ResponseHttp::status404());
