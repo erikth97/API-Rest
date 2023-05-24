@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Config\ResponseHttp;
+use App\Config\Security;
 use App\Models\UserModel;
 
 class UserController
@@ -39,9 +40,43 @@ class UserController
         }
     }
 
+    final public function getAll(string $endPoint)
+    {
+        if ($this->method == 'get' && $endPoint == $this->route) {
+            Security::validateTokenJwt($this->headers,Security::secretKey());
+            echo json_encode(UserModel::getAll());
+            exit;
+        }
+    }
+
+    final public function getUser(string $endPoint)
+    {
+        if ($this->method == 'get' && $endPoint == $this->route) {
+            Security::validateTokenJwt($this->headers,Security::secretKey());
+            $cedula = $this->route[1];
+            if(!isset($cedula)) {
+                echo json_encode(ResponseHttp::status400('El campo Cedula es requerido'));
+            }else if (!preg_match((self::$validateNumber, $cedula)) {
+                echo json_encode(ResponseHttp::status400());
+            }else {
+                UserModel::setCedula($dni);
+                echo json_encode(UserModel::getUser());
+                exit;
+            }
+            exit;
+            )
+            
+            echo json_encode(UserModel::getUser());
+            exit;
+        }
+    }
+
+
     final public function post(string $endPoint)
     {
         if ($this->method == 'post' && $endPoint == $this->route) {
+            Security::validateTokenJwt($this->headers,Security::secretKey());
+
             if (empty($this->data['name']) || empty($this->data['dni']) || empty($this->data['email']) ||
             empty($this->data['rol']) || empty($this->data['password']) || empty($this->data['confirmPassword'])) {
                 echo json_encode(ResponseHttp::status400('Todos los campos son requeridos'));
@@ -65,4 +100,3 @@ class UserController
         }
     }
 }
-
