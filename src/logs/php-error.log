@@ -1,3 +1,132 @@
-[17-May-2023 18:32:02 Europe/Berlin] esto es una prueba de error
-[17-May-2023 18:36:31 Europe/Berlin] esto es una prueba de error
-[17-May-2023 12:42:08 America/Monterrey] password incorrecto
+
+
+[19-May-2023 13:08:59 America/Monterrey] conexion exitosa
+[22-May-2023 13:04:35 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:05:04 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:05:30 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:05:51 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:18 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:19 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:19 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:19 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:19 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:20 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:38 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:39 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:39 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:39 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:40 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:41 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:06:41 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[22-May-2023 13:07:39 America/Monterrey] PHP Warning:  Undefined array key "pasword" in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 38
+[23-May-2023 10:02:09 America/Monterrey] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php:41
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Routes\user.php(14): App\Controllers\UserController->post('user/')
+#1 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 41
+[23-May-2023 10:02:11 America/Monterrey] PHP Fatal error:  Uncaught Error: Class "App\Controllers\UserModel" not found in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php:41
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Routes\user.php(14): App\Controllers\UserController->post('user/')
+#1 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Controllers\UserController.php on line 41
+[23-May-2023 10:07:04 America/Monterrey] conexion exitosa
+[23-May-2023 10:07:04 America/Monterrey] conexion exitosa
+[23-May-2023 10:07:04 America/Monterrey] conexion exitosa
+[23-May-2023 10:14:41 America/Monterrey] conexion exitosa
+[23-May-2023 10:14:42 America/Monterrey] conexion exitosa
+[23-May-2023 10:14:46 America/Monterrey] conexion exitosa
+[23-May-2023 10:15:23 America/Monterrey] conexion exitosa
+[23-May-2023 10:15:23 America/Monterrey] conexion exitosa
+[23-May-2023 10:15:24 America/Monterrey] conexion exitosa
+[23-May-2023 10:15:25 America/Monterrey] conexion exitosa
+[23-May-2023 10:28:55 America/Monterrey] conexion exitosa
+[23-May-2023 10:28:55 America/Monterrey] conexion exitosa
+[23-May-2023 10:29:06 America/Monterrey] conexion exitosa
+[23-May-2023 10:29:06 America/Monterrey] conexion exitosa
+[23-May-2023 10:29:06 America/Monterrey] conexion exitosa
+[23-May-2023 13:27:58 America/Monterrey] conexion exitosa
+[23-May-2023 13:27:59 America/Monterrey] conexion exitosa
+[23-May-2023 13:28:45 America/Monterrey] conexion exitosa
+[23-May-2023 14:54:24 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:20 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:20 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:21 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:23 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:54 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:54 America/Monterrey] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\API_REST\src\Models\UserModel.php:65
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#1 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#2 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 65
+[23-May-2023 14:55:57 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:57 America/Monterrey] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\API_REST\src\Models\UserModel.php:65
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#1 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#2 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 65
+[23-May-2023 14:55:58 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:58 America/Monterrey] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\API_REST\src\Models\UserModel.php:65
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#1 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#2 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 65
+[23-May-2023 14:55:59 America/Monterrey] conexion exitosa
+[23-May-2023 14:55:59 America/Monterrey] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\API_REST\src\Models\UserModel.php:65
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#1 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#2 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 65
+[23-May-2023 14:57:22 America/Monterrey] conexion exitosa
+[23-May-2023 14:57:22 America/Monterrey] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\API_REST\src\Models\UserModel.php:65
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#1 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#2 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 65
+[24-May-2023 10:05:21 America/Monterrey] conexion exitosa
+[24-May-2023 10:05:21 America/Monterrey] conexion exitosa
+[24-May-2023 10:05:21 America/Monterrey] conexion exitosa
+[24-May-2023 10:07:54 America/Monterrey] conexion exitosa
+[24-May-2023 10:07:54 America/Monterrey] PHP Fatal error:  Uncaught TypeError: App\Config\ResponseHttp::status200(): Argument #1 ($res) must be of type string, array given, called in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 67 and defined in C:\xampp\htdocs\API_REST\src\Config\ResponseHttp.php:12
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Models\UserModel.php(67): App\Config\ResponseHttp::status200(Array)
+#1 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#2 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#3 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Config\ResponseHttp.php on line 12
+[24-May-2023 10:07:55 America/Monterrey] conexion exitosa
+[24-May-2023 10:07:55 America/Monterrey] PHP Fatal error:  Uncaught TypeError: App\Config\ResponseHttp::status200(): Argument #1 ($res) must be of type string, array given, called in C:\xampp\htdocs\API_REST\src\Models\UserModel.php on line 67 and defined in C:\xampp\htdocs\API_REST\src\Config\ResponseHttp.php:12
+Stack trace:
+#0 C:\xampp\htdocs\API_REST\src\Models\UserModel.php(67): App\Config\ResponseHttp::status200(Array)
+#1 C:\xampp\htdocs\API_REST\src\Controllers\UserController.php(36): App\Models\UserModel::login()
+#2 C:\xampp\htdocs\API_REST\src\Routes\auth.php(14): App\Controllers\UserController->getLogin('auth/erikk@test...')
+#3 C:\xampp\htdocs\API_REST\public\index.php(22): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\API_REST\src\Config\ResponseHttp.php on line 12
+[24-May-2023 11:06:04 America/Monterrey] conexion exitosa
+[24-May-2023 12:25:35 America/Monterrey] conexion exitosa
+[24-May-2023 12:41:54 America/Monterrey] conexion exitosa
+[24-May-2023 12:47:45 America/Monterrey] conexion exitosa
+[24-May-2023 12:49:51 America/Monterrey] conexion exitosa
+[24-May-2023 12:49:52 America/Monterrey] conexion exitosa
+[24-May-2023 14:42:18 America/Monterrey] conexion exitosa
+[24-May-2023 14:46:22 America/Monterrey] conexion exitosa
+[24-May-2023 14:46:46 America/Monterrey] conexion exitosa
+[24-May-2023 14:46:48 America/Monterrey] conexion exitosa
