@@ -4,53 +4,43 @@ namespace App\Controllers;
 
 use App\Config\ResponseHttp;
 use App\Config\Security;
-use App\Models\ProductModel;
+use App\Models\PrductModel;
 
-class ProductController extends BaseController{   
+class ProductController {
 
-    final public function getAll(string $endPoint)
-    {
-        if ($this->getMethod() == 'get' && $endPoint == $this->getRoute()) {
-            Security::validateTokenJwt(Security::secretKey());
-            echo json_encode(ProductModel::getAll());
-            exit;
-        }    
-    }
+    private static $validate_stock = '/^[0-9]{1,}$/';
+    private static $validate_text = '/^[a-zA-Z ]+$/';
+    private static $validate_description = '/^[a-zA-Z ]{1,30}$/';
 
+    public function __construct(
+        private string $method,
+        private string $route,
+        private array  $params,
+        private $data,
+        private $headers
+    )
+    {}
+
+    ////////////// REGISTAR PRODUCTO ///////////////////////////////////
     final public function postSave(string $endPoint)
     {
-        if ($this->getMethod() == 'post' && $endPoint == $this->getRoute()) {
-            Security::validateTokenJwt(Security::secretKey());
-            
-            if (empty($this->getParam()['name']) || empty($this->getParam()['description']) || empty($this->getParam()['stock']) || empty($_FILES['product'])) {
+        if($this->method == 'post' && $endPoint == $this->route) {
+            Security::validateTokenJwt($this->headers,Security::secretKey());
+
+            if (empty($this->data()['name']) || empty($this->data()['description']) || empty($this->data()['stock']) || empty($_FILES['product'])) {
                 echo json_encode(ResponseHttp::status400('Todos los campos son requeridos'));
-            } else if(!preg_match(self::$validate_text,$this->getParam()['name'])) {
+            } else if(!preg_match(self::$validate_text,$this->data()['name'])) {
                 echo json_encode(ResponseHttp::status400('El campo Nombre solo admite texto'));
-            } else if(!preg_match(self::$validate_description,$this->getParam()['description'])) {
+            } else if(!preg_match(self::$validate_description,$this->data()['description'])) {
                 echo json_encode(ResponseHttp::status400('El campo Descripción solo admite texto y un máximo de 30 caracteres'));
-            } else if(!preg_match(self::$validate_stock,$this->getParam()['stock'])) {
+            } else if(!preg_match(self::$validate_stock,$this->data()['stock'])) {
                 echo json_encode(ResponseHttp::status400('El campo Stock solo admite números'));
             } else {
-                new ProductModel($this->getParam(),$_FILES);
+                new ProductModel($this->data,$_FILES);
                 echo json_encode(ProductModel::postSave());
             }
             exit;
         }
     }
-
-    final public function delete(string $endPoint)
-    {
-        if ($this->getMethod() == 'delete' && $endPoint == $this->getRoute()) {
-            Security::validateTokenJwt(Security::secretKey());
-            
-            if (empty($this->getParam()['name']) || empty($this->getParam()['IDtoken'])) {
-                echo json_encode(ResponseHttp::status400('Todos los campos son requeridos'));
-            } else {
-                ProductModel::setImageName($this->getParam()['name']);
-                ProductModel::setIDtoken($this->getParam()['IDtoken']);
-                echo json_encode(ProductModel::delete());
-            }
-            exit;
-        }
-    }
 }
+
